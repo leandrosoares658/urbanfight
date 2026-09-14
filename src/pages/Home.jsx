@@ -71,7 +71,7 @@ export default function Home() {
         </section>
       )}
 
-      <section className="container mapa" aria-labelledby="titulo-mapa">
+      <section className="container_mapa" aria-labelledby="titulo-mapa">
         <h2 id="titulo-mapa">ENCONTRE A URBAN FIGHT EM MONTES CLAROS - MG</h2>
         <iframe
           src={contato.mapaEmbed}

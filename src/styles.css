@@ -91,7 +91,11 @@ p {
 /* Header ---------------------------------------------------- */
 .header {
   border-bottom: 5px solid var(--vermelho);
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--preto);   /* essencial: sem isso o conteúdo passa por trás */
+  border-bottom: 5px solid var(--vermelho);
 }
 
 .header__inner {
@@ -267,14 +271,21 @@ p {
 }
 
 /* Mapa ------------------------------------------------------ */
-.mapa h2 {
+.container_mapa {
+  margin-top: 25px;
+}
+
+.container_mapa h2 {
+  width: min(100% - 2 * var(--pad), var(--container));
+  margin-inline: auto;
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 16px;
 }
 
-.mapa iframe {
-  width: 100%;
+.container_mapa iframe {
+  width: min(100% - 2 * var(--pad), var(--container));
+  margin-inline: auto;
   height: 340px;
   border: 0;
   border-radius: 8px;
