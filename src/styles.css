@@ -90,11 +90,8 @@ p {
 
 /* Header ---------------------------------------------------- */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: var(--preto);   /* essencial: sem isso o conteúdo passa por trás */
   border-bottom: 5px solid var(--vermelho);
+  position: relative;
 }
 
 .header__inner {
@@ -105,8 +102,8 @@ p {
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
 }
 
@@ -218,7 +215,7 @@ p {
 }
 
 .instrutores__texto .btn {
-  display: flex;
+  display: block;
   width: max-content;
   margin: 0 auto;
   padding: 10px 44px;
@@ -560,6 +557,149 @@ p {
   }
 
   .modalidade {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Eventos
+   ============================================================ */
+.btn--vazado {
+  background: transparent;
+  border: 2px solid var(--vermelho);
+}
+
+.btn--vazado:hover {
+  background: var(--vermelho);
+}
+
+.vazio {
+  font-size: 20px;
+  color: #cfcfcf;
+}
+
+.evento__data {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--vermelho);
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+}
+
+/* Listagem (/eventos) */
+.eventos-lista {
+  display: grid;
+  gap: 36px;
+}
+
+.evento {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.evento img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #333;
+}
+
+.evento h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.evento p {
+  font-size: clamp(16px, 1.6vw, 20px);
+  margin-bottom: 20px;
+}
+
+/* Destaque na Home */
+.eventos-destaque {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.evento-card {
+  display: block;
+  text-decoration: none;
+  color: var(--branco);
+  border: 2px solid #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color .15s ease;
+}
+
+.evento-card:hover {
+  border-color: var(--vermelho);
+}
+
+.evento-card:focus-visible {
+  outline: 3px solid var(--vermelho);
+}
+
+.evento-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #333;
+}
+
+.evento-card__texto {
+  padding: 16px 18px 20px;
+}
+
+.evento-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.evento-card p {
+  font-size: 15px;
+  color: #d8d8d8;
+}
+
+/* Página do evento */
+.evento-detalhe img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  background: #333;
+}
+
+.evento-detalhe p {
+  font-size: clamp(17px, 1.8vw, 21px);
+  margin-bottom: 18px;
+  max-width: 46em;
+}
+
+.evento-detalhe .section-title {
+  margin-top: 8px;
+}
+
+.evento-detalhe__acoes {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .evento {
+    grid-template-columns: 1fr;
+  }
+
+  .eventos-destaque {
     grid-template-columns: 1fr;
   }
 }

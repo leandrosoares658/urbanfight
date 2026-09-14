@@ -6,6 +6,8 @@ import Home from './pages/Home.jsx';
 import Modalidades from './pages/Modalidades.jsx';
 import Historia from './pages/Historia.jsx';
 import Planos from './pages/Planos.jsx';
+import Eventos from './pages/Eventos.jsx';
+import Evento from './pages/Evento.jsx';
 
 // Sobe a página ao trocar de rota (a menos que exista um #hash para rolar)
 function ScrollToTop() {
@@ -27,6 +29,8 @@ export default function App() {
         <Route path="/modalidades" element={<Modalidades />} />
         <Route path="/historia" element={<Historia />} />
         <Route path="/planos" element={<Planos />} />
+        <Route path="/eventos" element={<Eventos />} />
+        <Route path="/eventos/:slug" element={<Evento />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

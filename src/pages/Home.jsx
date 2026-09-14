@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { modalidades, contato } from '../data/site.js';
+import { eventosDestaque, formatarData } from '../data/eventos.js';
 
 export default function Home() {
   return (
@@ -50,6 +51,25 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {eventosDestaque.length > 0 && (
+        <section className="container" aria-labelledby="titulo-eventos">
+          <h2 className="section-title" id="titulo-eventos">PRÓXIMOS EVENTOS</h2>
+          <div className="eventos-destaque">
+            {eventosDestaque.map((e) => (
+              <Link className="evento-card" to={`/eventos/${e.slug}`} key={e.slug}>
+                {e.imagem && <img src={e.imagem} alt="" />}
+                <div className="evento-card__texto">
+                  <time className="evento__data" dateTime={e.data}>{formatarData(e.data)}</time>
+                  <h3>{e.title}</h3>
+                  <p>{e.resumo}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link className="btn" to="/eventos">Ver todos os eventos</Link>
+        </section>
+      )}
 
       <section className="container mapa" aria-labelledby="titulo-mapa">
         <h2 id="titulo-mapa">ENCONTRE A URBAN FIGHT EM MONTES CLAROS - MG</h2>

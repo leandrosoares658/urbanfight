@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: leandrosoares658/urbanfight   # usuário/repositório
+  branch: main
+
+# Permite rodar o painel localmente com `npx decap-server`
+local_backend: true
+
+locale: pt
+media_folder: public/img/eventos
+public_folder: /img/eventos
+
+collections:
+  - name: eventos
+    label: Eventos
+    label_singular: Evento
+    folder: src/content/eventos
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} — {{year}}/{{month}}/{{day}}'
+    sortable_fields: [data, title]
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Data do evento, name: data, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD/MM/YYYY', time_format: false }
+      - { label: Imagem, name: imagem, widget: image, required: false }
+      - { label: Resumo, name: resumo, widget: text, hint: 'Uma ou duas linhas — aparece na listagem e na Home.' }
+      - { label: Destacar na Home, name: destaque, widget: boolean, default: true }
+      - { label: Conteúdo, name: body, widget: markdown }

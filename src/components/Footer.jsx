@@ -13,6 +13,7 @@ export default function Footer() {
           <nav className="footer__nav" aria-label="Rodapé">
             <Link to="/modalidades">Modalidades</Link>
             <Link to="/historia">História</Link>
+            <Link to="/eventos">Eventos</Link>
             <Link to="/planos">Planos</Link>
             <a className="btn btn--pill" href={contato.whatsapp} target="_blank" rel="noopener">Treine Conosco</a>
           </nav>

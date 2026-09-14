@@ -1,0 +1,5 @@
+# O painel do Decap é um arquivo estático — não pode cair no fallback do React
+/admin/*   /admin/index.html   200
+
+# SPA: qualquer outra rota é resolvida pelo React Router
+/*         /index.html         200
