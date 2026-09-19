@@ -1,8 +1,8 @@
 // Edite aqui: contatos, modalidades, planos e horários.
 
 export const contato = {
-  whatsapp: 'https://wa.me/55SEUNUMERO',
-  instagram: 'https://instagram.com/SEUPERFIL',
+  whatsapp: 'https://wa.me/5538991096059',
+  instagram: 'https://instagram.com/urbanfight_oficial',
   mapaEmbed:
     'https://www.google.com/maps?q=Urban+Fight+Academia+de+Artes+Marciais+Montes+Claros+MG&output=embed',
 };
