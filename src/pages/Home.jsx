@@ -21,7 +21,7 @@ export default function Home() {
           <p>
             Na <strong>Urban Fight</strong>, acreditamos que as artes marciais vão muito além do treino físico,
             sendo um espaço para aprendizado, evolução e convivência. Oferecemos aulas de{' '}
-            <strong>Boxe, Kick Boxing, Jeet Kune Do e outras modalidades</strong>, atendendo alunos que nunca
+            <strong>Boxe, Kick Boxing, Jiu Jitsu e outras modalidades</strong>, atendendo alunos que nunca
             tiveram contato com as artes marciais antes.
           </p>
         </div>

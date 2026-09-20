@@ -357,8 +357,9 @@ p {
     padding: 16px var(--pad);
   }
 
-  .instrutores {
-    grid-template-columns: 1fr;
+  .instrutores { 
+    grid-template-columns: 1fr; 
+    gap: 8px; 
   }
 
   .instrutores__texto {
@@ -382,6 +383,29 @@ p {
 @media (max-width: 640px) {
   .nav-toggle {
     display: block;
+  }
+
+  .instrutores {
+    padding-inline: var(--pad);
+  }
+
+  .instrutores__foto {
+    object-position: center;
+    margin-inline: auto;
+  }
+
+  .instrutores__texto p {
+    font-size: 17px;
+    line-height: 1.45;
+    margin-bottom: 20px;
+  }
+
+  /* botão alinhado à direita fica estranho em coluna única */
+  .instrutores__texto .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .nav {
@@ -713,4 +737,21 @@ p {
   .eventos-destaque {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Tabelas de horários no mobile ------------------------------ */
+/* Itens de grid não encolhem abaixo do próprio conteúdo por padrão:
+   sem min-width: 0 a tabela estica o card e a página inteira rola de lado. */
+.horarios-lista > *,
+.modalidades-lista > *,
+.eventos-lista > * { min-width: 0; }
+
+.tabela-wrap { max-width: 100%; }
+
+@media (max-width: 640px) {
+  .tabela-wrap { padding: 12px; }
+  .horarios { font-size: 15px; }
+  .horarios th,
+  .horarios td { padding: 10px 6px; }
 }

@@ -1,0 +1,29 @@
+{
+  "horarios": [
+    {
+      "dia": "Segunda-feira",
+      "aulas": [
+        "08:00 - 09:00",
+        "19:15 - 20:15"
+      ]
+    },
+    {
+      "dia": "Quarta-feira",
+      "aulas": [
+        "19:15 - 20:15"
+      ]
+    },
+    {
+      "dia": "Quinta-feira",
+      "aulas": [
+        "08:00 - 09:00"
+      ]
+    },
+    {
+      "dia": "Sábado",
+      "aulas": [
+        "11:00 - 12:00"
+      ]
+    }
+  ]
+}

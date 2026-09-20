@@ -1,6 +1,10 @@
 // horarios: [{ dia, aulas: [...] }]
 // Dias com uma aula só ocupam todas as linhas (rowSpan), como no layout.
 export default function TabelaHorarios({ horarios }) {
+  if (!horarios?.length) {
+    return <p className="vazio">Horários ainda não cadastrados.</p>;
+  }
+
   const linhas = Math.max(...horarios.map((h) => h.aulas.length));
 
   return (

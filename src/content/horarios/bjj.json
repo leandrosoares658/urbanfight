@@ -1,0 +1,16 @@
+{
+  "horarios": [
+    {
+      "dia": "Terça-feira",
+      "aulas": [
+        "19:15 - 20:15"
+      ]
+    },
+    {
+      "dia": "Quinta-feira",
+      "aulas": [
+        "19:15 - 20:15"
+      ]
+    }
+  ]
+}

@@ -26,3 +26,160 @@ collections:
       - { label: Resumo, name: resumo, widget: text, hint: 'Uma ou duas linhas — aparece na listagem e na Home.' }
       - { label: Destacar na Home, name: destaque, widget: boolean, default: true }
       - { label: Conteúdo, name: body, widget: markdown }
+
+  - name: horarios
+    label: Horários das aulas
+    files:
+      - name: boxe
+        label: Boxe
+        file: src/content/horarios/boxe.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+      - name: kickboxing
+        label: Kickboxing
+        file: src/content/horarios/kickboxing.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+      - name: krav-maga
+        label: Krav Maga
+        file: src/content/horarios/krav-maga.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+      - name: taekwondo
+        label: Taekwondo
+        file: src/content/horarios/taekwondo.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+      - name: jeet-kune-do
+        label: Jeet Kune Do
+        file: src/content/horarios/jeet-kune-do.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+
+      - name: bjj
+        label: BJJ
+        file: src/content/horarios/bjj.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+      - name: sambo
+        label: Sambo
+        file: src/content/horarios/sambo.json
+        fields:
+          - label: Horários
+            name: horarios
+            widget: list
+            label_singular: Dia
+            summary: '{{fields.dia}}'
+            fields:
+              - label: Dia da semana
+                name: dia
+                widget: select
+                options: ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+              - label: Aulas nesse dia
+                name: aulas
+                widget: list
+                label_singular: Horário
+                field: { label: Horário, name: hora, widget: string, hint: 'Ex.: 19:15 - 20:15' }
+  - name: config
+    label: Configurações
+    files:
+      - name: planos
+        label: Planos e preços
+        file: src/content/config/planos.json
+        fields:
+          - label: Planos
+            name: planos
+            widget: list
+            label_singular: Plano
+            summary: '{{fields.nome}}'
+            fields:
+              - { label: Nome do plano, name: nome, widget: string, hint: 'Ex.: Mensal, Semestre, Anual' }
+              - label: Linhas de preço
+                name: itens
+                widget: list
+                label_singular: Linha
+                field: { label: Texto, name: texto, widget: string, hint: 'Ex.: R$ 125,00/mês - 1 modalidade' }
