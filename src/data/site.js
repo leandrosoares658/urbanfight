@@ -1,6 +1,23 @@
 // Contatos ficam aqui; horários e preços são editados pelo painel em /admin.
 import planosJson from '../content/config/planos.json';
 
+// Dados usados no SEO (título, compartilhamento e ficha do Google).
+// ATENÇÃO: confira o endereço e o domínio antes de publicar.
+export const site = {
+  nome: 'Urban Fight',
+  url: 'https://urbanfight.netlify.app',            // domínio final, sem barra no fim
+  descricao:
+    'Escola de artes marciais em Montes Claros - MG: Boxe, Kickboxing, Krav-Maga, Taekwondo, Jeet Kune Do, Jiu Jitsu e Sambo.',
+  telefone: '+5538991096059',
+  imagemPadrao: '/img/og-image.jpg',                 // 1200x630 px
+  endereco: {
+    rua: '[rua e número]',
+    cidade: 'Montes Claros',
+    estado: 'MG',
+    cep: '[CEP]',
+  },
+};
+
 export const contato = {
   whatsapp: 'https://wa.me/5538991096059',
   instagram: 'https://www.instagram.com/urbanfight_oficial/',

@@ -1,3 +1,5 @@
+import Seo from '../components/Seo.jsx';
+import { NegocioJsonLd } from '../components/JsonLd.jsx';
 import { Link } from 'react-router-dom';
 import { modalidades, contato } from '../data/site.js';
 import { eventosDestaque, formatarData } from '../data/eventos.js';
@@ -5,6 +7,12 @@ import { eventosDestaque, formatarData } from '../data/eventos.js';
 export default function Home() {
   return (
     <main>
+      <Seo
+        titulo="Urban Fight — Escola de Artes Marciais em Montes Claros - MG"
+        descricao="Aulas de Boxe, Kickboxing, Krav-Maga, Taekwondo, Jeet Kune Do, Jiu Jitsu e Sambo em Montes Claros - MG. Instrutores certificados e turmas para iniciantes."
+        caminho="/"
+      />
+      <NegocioJsonLd />
       <section className="hero" aria-label="Apresentação">
         <div className="hero__texto">
           <ul className="hero__lista">

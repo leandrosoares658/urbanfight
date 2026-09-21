@@ -1,9 +1,15 @@
+import Seo from '../components/Seo.jsx';
 import { Link } from 'react-router-dom';
 import { eventos, formatarData } from '../data/eventos.js';
 
 export default function Eventos() {
   return (
     <main className="container page">
+      <Seo
+        titulo="Eventos"
+        descricao="Campeonatos, aulões e promoções da Urban Fight em Montes Claros - MG. Acompanhe a agenda da academia."
+        caminho="/eventos"
+      />
       <h1 className="section-title">EVENTOS</h1>
 
       {eventos.length === 0 ? (

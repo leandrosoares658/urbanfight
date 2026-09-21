@@ -26,11 +26,11 @@ export default function HorarioModalidade({ modalidade, abrirInicial }) {
       >
         {aberto ? 'Ocultar' : 'Ver'} Horários {modalidade.label}
       </button>
-      {aberto && (
-        <div className="horario__tabela" id={idTabela}>
-          <TabelaHorarios horarios={modalidade.horarios} />
-        </div>
-      )}
+      {/* Sempre no HTML (só escondido): assim o Google indexa os horários.
+          Renderizar só quando aberto deixaria a tabela fora da página. */}
+      <div className="horario__tabela" id={idTabela} hidden={!aberto}>
+        <TabelaHorarios horarios={modalidade.horarios} />
+      </div>
     </div>
   );
 }

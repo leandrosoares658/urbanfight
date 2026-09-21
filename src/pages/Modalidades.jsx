@@ -1,3 +1,4 @@
+import Seo from '../components/Seo.jsx';
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { modalidades } from '../data/site.js';
@@ -11,6 +12,11 @@ export default function Modalidades() {
 
   return (
     <main className="container page">
+      <Seo
+        titulo="Modalidades"
+        descricao="Conheça as modalidades da Urban Fight em Montes Claros - MG: Boxe, Kickboxing, Krav-Maga, Taekwondo, Jeet Kune Do, Jiu Jitsu e Sambo."
+        caminho="/modalidades"
+      />
       <h1 className="section-title">MODALIDADES</h1>
       <div className="modalidades-lista">
         {modalidades.map((m) => (

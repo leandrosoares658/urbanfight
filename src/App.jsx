@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
@@ -8,6 +8,7 @@ import Historia from './pages/Historia.jsx';
 import Planos from './pages/Planos.jsx';
 import Eventos from './pages/Eventos.jsx';
 import Evento from './pages/Evento.jsx';
+import { eventos } from './data/eventos.js';
 
 // Sobe a página ao trocar de rota (a menos que exista um #hash para rolar)
 function ScrollToTop() {
@@ -18,22 +19,36 @@ function ScrollToTop() {
   return null;
 }
 
-export default function App() {
+function Layout() {
   const { pathname } = useLocation();
   return (
     <>
       <ScrollToTop />
       <Header home={pathname === '/'} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/modalidades" element={<Modalidades />} />
-        <Route path="/historia" element={<Historia />} />
-        <Route path="/planos" element={<Planos />} />
-        <Route path="/eventos" element={<Eventos />} />
-        <Route path="/eventos/:slug" element={<Evento />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <Outlet />
       <Footer />
     </>
   );
 }
+
+// Lista de rotas: o vite-react-ssg gera um HTML estático para cada uma
+export const routes = [
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'modalidades', element: <Modalidades /> },
+      { path: 'historia', element: <Historia /> },
+      { path: 'planos', element: <Planos /> },
+      { path: 'eventos', element: <Eventos /> },
+      {
+        path: 'eventos/:slug',
+        element: <Evento />,
+        // um HTML por evento publicado no painel
+        getStaticPaths: () => eventos.map((e) => `eventos/${e.slug}`),
+      },
+      { path: '*', element: <Home /> },
+    ],
+  },
+];

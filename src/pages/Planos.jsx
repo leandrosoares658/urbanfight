@@ -1,3 +1,4 @@
+import Seo from '../components/Seo.jsx';
 import { useLocation } from 'react-router-dom';
 import { planos, modalidades } from '../data/site.js';
 import HorarioModalidade from '../components/HorarioModalidade.jsx';
@@ -8,6 +9,11 @@ export default function Planos() {
 
   return (
     <main className="container page">
+      <Seo
+        titulo="Planos e Horários"
+        descricao="Planos mensal, semestral e anual e horários das aulas de cada modalidade da Urban Fight, em Montes Claros - MG."
+        caminho="/planos"
+      />
       <h1 className="section-title">PLANOS</h1>
 
       <div className="planos-grid">
