@@ -10,20 +10,18 @@
       "nome": "Semestre",
       "itens": [
         "R$ 125,00/mês - 1 modalidade",
-        "R$ 190,00/mês - 2 modalidades",
-        "R$ 270,00/mês - 3 modalidades",
-        "R$ 330,00/mês - 4 modalidades",
-        "R$ 400,00/mês - 5 modalidades"
+        "R$ 220,00/mês - 2 modalidades",
+        "R$ 300,00/mês - 3 modalidades",
+        "R$ 370,00/mês - 4 modalidades"
       ]
     },
     {
       "nome": "Anual",
       "itens": [
         "R$ 115,00/mês - 1 modalidade",
-        "R$ 180,00/mês - 2 modalidades",
-        "R$ 250,00/mês - 3 modalidades",
-        "R$ 300,00/mês - 4 modalidades",
-        "R$ 380,00/mês - 5 modalidades"
+        "R$ 200,00/mês - 2 modalidades",
+        "R$ 280,00/mês - 3 modalidades",
+        "R$ 350,00/mês - 4 modalidades"
       ]
     }
   ]
