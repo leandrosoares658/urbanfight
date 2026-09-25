@@ -755,3 +755,26 @@ p {
   .horarios th,
   .horarios td { padding: 10px 6px; }
 }
+
+
+/* Célula da grade: horário + turma + espaço --------------------- */
+.horarios td { vertical-align: top; padding: 0; }
+.aula {
+  padding: 12px 8px;
+  border-bottom: 2px solid var(--preto);
+}
+.aula:last-child { border-bottom: 0; }
+.aula__hora { display: block; }
+.aula__info {
+  display: block;
+  font-size: .62em;
+  font-weight: 700;
+  color: #444;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+@media (max-width: 640px) {
+  .aula { padding: 10px 6px; }
+}

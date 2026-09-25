@@ -49,12 +49,28 @@ const sambo =
   'O SAMBO é uma arte marcial e sistema de combate completo, desenvolvido na União Soviética no início do século XX. O termo vem da expressão Samozashchita Bez Oruzhiya, que se traduz literalmente como "autodefesa sem armas". Reconhecido mundialmente por sua eficácia, o SAMBO combina as técnicas mais eficientes de diversas lutas tradicionais do mundo, como o Judô, o Jiu-Jitsu e estilos de wrestling da Ásia Central.'
 
 
-// Horários vêm do painel (/admin → Horários das aulas), um JSON por modalidade
-const horariosJson = import.meta.glob('../content/horarios/*.json', { eager: true, import: 'default' });
+// Horários vêm do painel (/admin → Horários das aulas), num arquivo só:
+// uma linha por aula, com modalidade, dia, horário, turma e espaço.
+import aulasJson from '../content/horarios/aulas.json';
 
+export const DIAS_SEMANA = [
+  'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira',
+  'Sexta-feira', 'Sábado', 'Domingo',
+];
+
+// Agrupa as aulas de uma modalidade por dia, na ordem da semana
 function horariosDe(id) {
-  const arquivo = horariosJson[`../content/horarios/${id}.json`];
-  return arquivo?.horarios?.filter((h) => h.dia && h.aulas?.length) ?? [];
+  const aulas = (aulasJson.aulas ?? []).filter((a) => a.modalidade === id && a.dia && a.horario);
+
+  return DIAS_SEMANA
+    .map((dia) => ({
+      dia,
+      aulas: aulas
+        .filter((a) => a.dia === dia)
+        .sort((a, b) => a.horario.localeCompare(b.horario))
+        .map((a) => ({ horario: a.horario, turma: a.turma || '', espaco: a.espaco || '' })),
+    }))
+    .filter((d) => d.aulas.length > 0);
 }
 
 const listaModalidades = [

@@ -1,0 +1,452 @@
+{
+  "aulas": [
+    {
+      "modalidade": "bjj",
+      "dia": "Segunda-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Segunda-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Terça-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Terça-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Terça-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Quarta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Quarta-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Quinta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Quinta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Quinta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Sexta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Sexta-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Sábado",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "bjj",
+      "dia": "Sábado",
+      "horario": "10:00 - 11:00",
+      "turma": "Feminino",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Segunda-feira",
+      "horario": "08:00 - 09:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Segunda-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Segunda-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Segunda-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Segunda-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quarta-feira",
+      "horario": "08:00 - 09:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quarta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quarta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quarta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quarta-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Quinta-feira",
+      "horario": "08:00 - 09:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Sexta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Sexta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Sexta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "1"
+    },
+    {
+      "modalidade": "boxe",
+      "dia": "Sábado",
+      "horario": "11:00 - 12:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "jeet-kune-do",
+      "dia": "Terça-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "jeet-kune-do",
+      "dia": "Quinta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "jeet-kune-do",
+      "dia": "Sexta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Terça-feira",
+      "horario": "08:00 - 09:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Terça-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Terça-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Terça-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Terça-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Quinta-feira",
+      "horario": "09:00 - 10:00",
+      "turma": "Kids",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Quinta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Quinta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Quinta-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Sexta-feira",
+      "horario": "08:00 - 09:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Sábado",
+      "horario": "08:00 - 09:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Sábado",
+      "horario": "09:00 - 10:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "kickboxing",
+      "dia": "Sábado",
+      "horario": "10:00 - 11:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Segunda-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Segunda-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Segunda-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Terça-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Quarta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Feminino",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Quarta-feira",
+      "horario": "20:00 - 21:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Quinta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Sexta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Feminino",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Sexta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "krav-maga",
+      "dia": "Sábado",
+      "horario": "10:00 - 11:00",
+      "turma": "Kids",
+      "espaco": "3"
+    },
+    {
+      "modalidade": "sambo",
+      "dia": "Terça-feira",
+      "horario": "18:30 - 19:30",
+      "turma": "Adulto",
+      "espaco": "1"
+    },
+    {
+      "modalidade": "sambo",
+      "dia": "Quinta-feira",
+      "horario": "18:30 - 19:30",
+      "turma": "Adulto",
+      "espaco": "1"
+    },
+    {
+      "modalidade": "sambo",
+      "dia": "Sexta-feira",
+      "horario": "18:30 - 19:30",
+      "turma": "Adulto",
+      "espaco": "1"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Quarta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Quarta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Sexta-feira",
+      "horario": "18:00 - 19:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Sexta-feira",
+      "horario": "19:00 - 20:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Sábado",
+      "horario": "08:00 - 09:00",
+      "turma": "Kids",
+      "espaco": "4"
+    },
+    {
+      "modalidade": "taekwondo",
+      "dia": "Sábado",
+      "horario": "09:00 - 10:00",
+      "turma": "Adulto",
+      "espaco": "2"
+    }
+  ]
+}
