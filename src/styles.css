@@ -778,3 +778,51 @@ p {
 @media (max-width: 640px) {
   .aula { padding: 10px 6px; }
 }
+
+
+/* História: parágrafos e subtítulos ---------------------------- */
+.historia p {
+  font-size: clamp(17px, 1.9vw, 22px);
+  line-height: 1.55;
+  max-width: 46em;
+  margin-bottom: 20px;
+}
+.historia h2 {
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 800;
+  margin: 36px 0 16px;
+}
+.historia strong { font-weight: 800; }
+
+
+/* Logos das federações ----------------------------------------- */
+.federacoes {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+.federacao {
+  background: var(--branco);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+.federacao img {
+  max-width: 100%;
+  max-height: 84px;
+  width: auto;
+  object-fit: contain;
+}
+.federacao a { display: flex; }
+
+@media (max-width: 640px) {
+  .federacoes { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .federacao { min-height: 96px; padding: 12px; }
+  .federacao img { max-height: 64px; }
+}

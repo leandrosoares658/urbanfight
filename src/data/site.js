@@ -31,10 +31,10 @@ const boxe =
   'O boxe é muito mais do que desferir golpes. É uma atividade dinâmica que combina alta queima calórica, melhora do condicionamento cardiovascular e alívio do estresse. Nas nossas aulas, você aprenderá técnicas refinadas de soco, esquiva e movimentação de pernas, tudo em um ambiente seguro e acolhedor.';
 
 const kick = 
-  'O Kickboxing é uma arte marcial dinâmica que combina socos do boxe tradicional com chutes potentes de artes marciais orientais, ideal para quem busca condicionamento físico, defesa pessoal ou alta performance no esporte. '
+  'O Kickboxing é uma junção do Karatê de contato ( Kyokushin)+ Muay Thay + Boxe. Sendo rápido, versátil e dinâmico, trazendo em seu contexto sempre muito volume e intensidade, ideal para quem busca condicionamento físico, defesa pessoal ou alta performance no esporte. '
 
 const krav = 
-  'Krav Maga é um sistema de defesa pessoal criado em Israel que ensina qualquer pessoa a se defender de agressões reais, independentemente de idade, sexo ou força física' 
+  'Krav Maga é um sistema de defesa pessoal criado e usado pelo exercito de Israel, que ensina qualquer pessoa a se defender de agressões reais, independentemente de idade, sexo ou força física' 
 
 const tkd = 
   'O taekwondo é uma arte marcial de origem coreana e esporte olímpico que se destaca pelo uso potente e veloz de chutes altos, e no desenvolvimento integreado do corpo e da mente.'
@@ -46,7 +46,7 @@ const bjj =
   'Transforme seu corpo e mente com o Jiu-Jitsu Brasileiro. Na Urban Fight, oferecemos um ambiente seguro e acolhedor para quem busca aprender defesa pessoal, melhorar a saúde física e desenvolver a autoconfiança.'
 
 const sambo = 
-  'O SAMBO é uma arte marcial e sistema de combate completo, desenvolvido na União Soviética no início do século XX. O termo vem da expressão Samozashchita Bez Oruzhiya, que se traduz literalmente como "autodefesa sem armas". Reconhecido mundialmente por sua eficácia, o SAMBO combina as técnicas mais eficientes de diversas lutas tradicionais do mundo, como o Judô, o Jiu-Jitsu e estilos de wrestling da Ásia Central.'
+  'O Sambo é uma arte marcial e sistema de combate completo, desenvolvido na União Soviética no início do século XX. O termo vem da expressão Samozashchita Bez Oruzhiya, que se traduz literalmente como "autodefesa sem armas". Reconhecido mundialmente por sua eficácia após lutadores do UFC como Fedor Emelianenko, Khabib Nurmagomedov e Islam Makhachev se tornarem lendas. O Sambo combina as técnicas mais eficientes de diversas lutas tradicionais do mundo, como o Judô/Jujutsu japônes e estilos americano/russo de Wrestling.'
 
 
 // Horários vêm do painel (/admin → Horários das aulas), num arquivo só:
@@ -85,19 +85,32 @@ const listaModalidades = [
 
 export const modalidades = listaModalidades.map((m) => ({ ...m, horarios: horariosDe(m.id) }));
 
-export const historia = `A Urban Fight nasceu em 2022, em Montes Claros, da vontade do mestre Andre de criar um espaço onde qualquer pessoa pudesse aprender artes marciais: do iniciante que nunca calçou uma luva ao atleta que compete.
+// Federações e instituições que certificam o Mestre André.
+// As imagens ficam em public/img/federacoes/ — use PNG com fundo transparente
+// quando possível; o card branco garante que qualquer logo apareça bem.
+export const federacoes = [
+  { nome: 'Federação Mineira de Kickboxing', imagem: '/img/federacoes/fmkb.png', site: '' },
+  { nome: 'Confederação Brasileira de Boxe', imagem: '/img/federacoes/cbboxe.png', site: '' },
+  { nome: 'Federação de Jeet Kune Do', imagem: '/img/federacoes/abjkd_logo.png', site: '' },
+  { nome: 'Krav Maga', imagem: '/img/federacoes/kravmaga.png', site: '' },
+];
 
-Hoje somos uma escola com 7 modalidades e mais de 5000 alunos, onde o treino sério anda junto com o respeito e a convivência. Aqui ninguém treina sozinho: cada aluno evolui no próprio ritmo, com acompanhamento de perto.
+export const historia = `A **Urban Fight nasceu em 2022, em Montes Claros**, fruto de uma trajetória construída ao longo de anos de dedicação às artes marciais, busca por conhecimento e constante evolução.
 
-Quem está à frente?
+O Mestre André teve seu primeiro contato com as artes marciais ainda aos **9 anos de idade**, quando começou a praticar Kung Fu. Depois de um período de treinamento, acabou seguindo outros caminhos e se afastando dos tatames. Anos mais tarde, já atuando na área de **segurança pública**, percebeu novamente a importância das artes marciais em sua vida e decidiu retomar sua jornada.
 
-Mestre Andre treina boxe, kickboxing, krav-maga, jeet-kune-do, jiu-jitsu brasileiro e sambo há mais de 10 anos, já trabalhou na área de segurança prisional e hoje além de ministrar aulas, possui sua própria empresa de segurança
-e ensina desde 2022. [Uma ou duas frases: títulos, competições, onde se formou, o que o motiva a ensinar.]
+Ao pesquisar sobre o Kung Fu e a trajetória de **Bruce Lee**, conheceu o **Jeet Kune Do**, modalidade na qual encontrou uma nova forma de enxergar e praticar as artes marciais. Em busca de ampliar seus conhecimentos, especialmente na área de defesa pessoal, iniciou também seus estudos no **Krav Maga**.
 
-Certificações
+A busca por conhecimento levou o Mestre André a viajar por diferentes cidades e estados, incluindo **São Paulo, Rio de Janeiro, Belo Horizonte, Brasília, Alfenas e Poços de Caldas**, treinando com diferentes professores e especialistas e adquirindo experiências que contribuíram para sua formação.
 
-[Certificação] — [entidade], [ano]
-[Certificação] — [entidade], [ano]
-[Certificação] — [entidade], [ano]
+Com o passar dos anos, sua trajetória também se expandiu para o **Boxe e o Kickboxing**, modalidades nas quais aprofundou sua formação como atleta e professor. Ao longo desse caminho, conquistou **graduações, títulos e certificações**, incluindo a formação como treinador de Boxe e a faixa-preta de Kickboxing, além das graduações nas demais modalidades em que atua.
 
-Quer conhecer a academia? Agende uma aula experimental.`;
+Em 2022, todo esse conhecimento e experiência deram origem à **Urban Fight**. Mais do que criar uma academia, o objetivo era construir um espaço onde pessoas de diferentes níveis pudessem encontrar nas artes marciais uma ferramenta para desenvolver **disciplina, confiança, condicionamento físico, técnica e autoconhecimento**.
+
+E essa busca por evolução continua até hoje. Mesmo como professor e fundador da academia, o Mestre André permanece como aluno, atualmente treinando **Jiu-Jitsu e Taekwondo**, porque acreditamos que **quem ensina também precisa continuar aprendendo**.
+
+Essa trajetória é construída não apenas dentro dos tatames, mas também por meio de **formação, graduação e reconhecimento junto a federações e organizações especializadas nas diferentes modalidades praticadas**.
+
+### Formação que faz parte da nossa história
+
+Conheça algumas das **federações e instituições que certificam e reconhecem a formação dos professores da Urban Fight:**`;
